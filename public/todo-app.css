@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    max-width: 640px;
+    margin: 32px auto;
+  }
+  .Todopage-title {
+    font-size: 48px;
+    line-height: 1.6;
+    color: #453c52;
+  }
+  .display-flex {
+    display: flex;
+    align-items: center;
+  }
+  .Todopage-section-title {
+    font-size: 34px;
+    line-height: 1.4;
+    color: #453c52;
+    flex: none;
+  }
+  .Todo-section {
+    margin-bottom: 32px;
+    margin-left: 32px;
+  }
+  .Todo-remaining-count {
+    margin-left: 10px;
+    font-size: 12px;
+    color: red;
+  }
+  /* typo scale
+  48px
+  34px
+  24px
+  20px
+  16px
+  */
+  

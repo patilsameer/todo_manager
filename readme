@@ -1,0 +1,11 @@
+users_controller.rb --file - this file contains create, login, show and index functions. Show is used for displaying based on Id, index will list all users, create will use post method to add new record to database and login is used to verify that the record with email and password is present or not
+
+routes.rb --file-- this file is edited to add post method for creating user, resources approach is used for todo list, with users -resources approach was throwing error so added separate post method
+
+user.rb --file-- is used to created a class user which is used for rendering the data from table to html page, the method to_pleasant_string is created for this purpose
+
+apart from this - code is doing everything expected from todo list program
+the files of todo are
+todos_controller.rb
+todo.rb-
+these files are created as per the instructions provided in level 4 & 5, 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do management app</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="todo-app.css">
+</head>
+<body>
+    <h1 class="Todopage-title">My Todo-list</h1>
+    <article>
+        <section class="Todo-section">
+            <input type="text" placeholder="What next to do?" name="task" />
+            <input type="date" name="date" placeholder="dd-mm-yy" />
+            <button style="background-color: green; color:white">Add</button>
+        </section>
+        <section class="Todo-section">
+            <div class="display-flex">
+                <p>Due Today</p>
+                <p class="Todo-remaining-count">0/4</p>
+            </div>
+            <ul>
+                <li class="display-flex">
+                    <input type="checkbox" class="Todopage-paragraph">Submit SaaS 201 Project
+                    <p class="Todo-remaining-count">overdue</p>
+                </li>
+                <li><input type="checkbox" class="Todopage-paragraph">Call accountant</li>
+            </ul>
+        </section>
+        <section class="Todo-section">
+            <div class="display-flex">
+                <p>Due Tomorrow</p>
+                <p class="Todo-remaining-count">0/4</p>
+            </div>
+            <ul>
+                <li>
+                    <input type="checkbox" class="Todopage-paragraph">Refill Groceries
+                </li>
+            </ul>
+        </section>
+        <section class="Todo-section">
+            <div class="display-flex">
+                <p>Remaining</p>
+                <p class="Todo-remaining-count">0/4</p>
+            </div>
+            <ul>
+                <li><input type="checkbox" class="Todopage-paragraph">Type Something</li>
+                </li>
+                <li><input type="checkbox" class="Todopage-paragraph">Type Something</li>
+                <li><input type="checkbox" class="Todopage-paragraph">Type Something</li>
+            </ul>
+        </section>
+    </article>
+</body>
+</html>
