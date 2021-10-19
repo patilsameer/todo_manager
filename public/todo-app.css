@@ -1,37 +1,60 @@
 body {
-    font-family: sans-serif;
-    max-width: 640px;
-    margin: 32px auto;
-  }
-  .Todopage-title {
-    font-size: 48px;
-    line-height: 1.6;
-    color: #453c52;
-  }
-  .display-flex {
-    display: flex;
-    align-items: center;
-  }
-  .Todopage-section-title {
-    font-size: 34px;
-    line-height: 1.4;
-    color: #453c52;
-    flex: none;
-  }
-  .Todo-section {
-    margin-bottom: 32px;
-    margin-left: 32px;
-  }
-  .Todo-remaining-count {
-    margin-left: 10px;
-    font-size: 12px;
-    color: red;
-  }
-  /* typo scale
-  48px
-  34px
-  24px
-  20px
-  16px
-  */
-  
+  font-family: sans-serif;
+  max-width: 640px;
+  margin: 32px auto;
+}
+.Todopage-title {
+  font-size: 48px;
+  line-height: 1.6;
+  color: #453c52;
+}
+.display-flex {
+  display: flex;
+  align-items: center;
+}
+.Todopage-section-title {
+  font-size: 34px;
+  line-height: 1.4;
+  color: #453c52;
+  flex: none;
+}
+.Todo-section {
+  margin-bottom: 32px;
+  margin-left: 32px;
+}
+.Todo-trash-icon a {
+  visibility: hidden;
+  font-size: 10px;
+  margin-left: 10px;
+  background-size: 10px;
+  height: 10px;
+  width: 10px;
+}
+
+.Todo-remaining-count {
+  margin-left: 10px;
+  font-size: 12px;
+  color: red;
+}
+
+.Todo-due-date {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.Todo-trash-icon:hover a {
+  visibility: visible;
+  margin-left: 10px;
+  height: 5px;
+  width: 5px;
+  font-size: 12px;
+  image-rendering: auto;
+  background-size: 10px;
+}
+/* typo scale
+48px
+34px
+24px
+20px
+16px
+*/
