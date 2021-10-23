@@ -1,0 +1,74 @@
+<h1>this is index html file in todos</h1>
+
+
+
+   <h1 class="Todopage-title">My Todo-list</h1>
+    <article>
+      <section class="Todo-section">
+        <input type="text" placeholder="What next to do?" name="task" />
+        <input type="date" name="date" placeholder="dd-mm-yy" />
+        <button style="background-color: green; color: white">Add</button>
+      </section>
+
+      <%=render partial: "todo-section", locals: {
+          section_title:"Overdue"
+          } 
+      %>
+      <%=render partial: "todo-section", locals: {
+          section_title:"Due Today"
+          }
+      %>
+
+      <section class="Todo-section">
+        <div class="display-flex">
+          <p>Due Tomorrow</p>
+          <p class="Todo-remaining-count">0/4</p>
+        </div>
+        <ul>
+          <li class="display-flex">
+            <input type="checkbox" class="Todopage-paragraph" />Refill Groceries
+            <div class="Todo-trash-icon">
+              <a href="#"
+                ><img style="width: 15px; height: 16px" src="trashicon.png"
+              /></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="Todo-section">
+        <div class="display-flex">
+          <p>Remaining</p>
+          <p class="Todo-remaining-count">0/4</p>
+        </div>
+        <ul>
+          <li class="display-flex">
+            <input type="checkbox" class="Todopage-paragraph" />Type Something
+            <p class="Todo-due-date">Jan 21</p>
+            <div class="Todo-trash-icon">
+              <a href="#"
+                ><img style="width: 15px; height: 16px" src="trashicon.png"
+              /></a>
+            </div>
+          </li>
+          <li class="display-flex">
+            <input type="checkbox" class="Todopage-paragraph" />Type Something
+            <p class="Todo-due-date">Jan 22</p>
+            <div class="Todo-trash-icon">
+              <a href="#"
+                ><img style="width: 15px; height: 16px" src="trashicon.png"
+              /></a>
+            </div>
+          </li>
+          <li class="display-flex">
+            <input type="checkbox" class="Todopage-paragraph" />Type Something
+            <p class="Todo-due-date">Jan 23</p>
+            <div class="Todo-trash-icon">
+              <a href="#"
+                ><img style="width: 15px; height: 16px" src="trashicon.png"
+              /></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </body>
