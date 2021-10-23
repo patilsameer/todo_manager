@@ -11,30 +11,18 @@
       </section>
 
       <%=render partial: "todo-section", locals: {
-          section_title:"Overdue"
+          section_title:"Overdue",
+          todos: Todo.overdue
           } 
       %>
+     
       <%=render partial: "todo-section", locals: {
-          section_title:"Due Today"
-          }
+          section_title:"Due Tomorrow",
+          todos: Todo.due_tomorrow
+          } 
       %>
 
-      <section class="Todo-section">
-        <div class="display-flex">
-          <p>Due Tomorrow</p>
-          <p class="Todo-remaining-count">0/4</p>
-        </div>
-        <ul>
-          <li class="display-flex">
-            <input type="checkbox" class="Todopage-paragraph" />Refill Groceries
-            <div class="Todo-trash-icon">
-              <a href="#"
-                ><img style="width: 15px; height: 16px" src="trashicon.png"
-              /></a>
-            </div>
-          </li>
-        </ul>
-      </section>
+      
       <section class="Todo-section">
         <div class="display-flex">
           <p>Remaining</p>
