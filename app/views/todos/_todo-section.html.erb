@@ -1,15 +1,15 @@
 <section class="Todo-section">
     <div class="display-flex">
       <p><%= section_title%></p>
-      <p class="Todo-remaining-count">0/4</p>
+      <p class="Todo-remaining-count"><%=todos.completed.count%>/<%=todos.count%></p>
     </div>
     <ul>
       <li>
       <%todos.each do |todo| %>
         <div style="display: flex">
         <input type="checkbox" /><div style="display: flex">
-                <p><%=todo.todo_text %><p>
-                <p> <%=todo.due_date%> </p>
+                <p style="padding-right:7px;"><%=todo.todo_text %><p>
+                <p> <%=todo.due_date.to_s(:short)%> </p>
             </div>
         <p class="Todo-remaining-count">overdue</p>
         <div class="Todo-trash-icon">
